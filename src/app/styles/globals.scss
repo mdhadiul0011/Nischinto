@@ -1,0 +1,48 @@
+@import './variables';
+@import './breakpoint';
+@import './reset';
+
+//bootstrap css
+@import "bootstrap/scss/bootstrap.scss";
+
+//homepart css
+@import "../../../public/assets/allcss/container.scss";
+@import "../../../public/assets/allcss/headcontent.scss";
+@import "../../../public/assets/allcss/homepartcss/headertop.scss";
+@import "../../../public/assets/allcss/homepartcss/footer.scss";
+@import "../../../public/assets/allcss/homepartcss/hero.scss";
+@import "../../../public/assets/allcss/homepartcss/iconbox.scss";
+@import "../../../public/assets/allcss/homepartcss/about.scss";
+@import "../../../public/assets/allcss/homepartcss/department.scss";
+@import "../../../public/assets/allcss/homepartcss/appointment.scss";
+@import "../../../public/assets/allcss/homepartcss/specialdr.scss";
+@import "../../../public/assets/allcss/homepartcss/gallary.scss";
+@import "../../../public/assets/allcss/homepartcss/procedure.scss";
+@import "../../../public/assets/allcss/homepartcss/peoplescomments.scss";
+@import "../../../public/assets/allcss/homepartcss/funfact.scss";
+@import "../../../public/assets/allcss/homepartcss/pricing.scss";
+@import "../../../public/assets/allcss/homepartcss/faq.scss";
+@import "../../../public/assets/allcss/homepartcss/newsletter.scss";
+@import "../../../public/assets/allcss/homepartcss/blog.scss";
+@import "../../../public/assets/allcss/homepartcss/client.scss";
+@import "../../../public/assets/allcss/homepartcss/contact.scss";
+
+//blog hero css
+@import "../../../public/assets/allcss/blog-hero-css/blogsidebarhero.scss";
+@import "../../../public/assets/allcss/blog-hero-css/blogdetailshero.scss";
+
+//blog all part css
+@import "../../../public/assets/allcss/blogallpartcss/blogrightsidebar.scss";
+@import "../../../public/assets/allcss/blogallpartcss/pagination.scss";
+@import "../../../public/assets/allcss/blogallpartcss/nosidebar.scss";
+@import "../../../public/assets/allcss/blogallpartcss/blogdetails.scss";
+
+//doctor profile css
+@import "../../../public/assets/allcss/drprofilecss/doctorprofile.scss";
+
+
+//react carousel
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+

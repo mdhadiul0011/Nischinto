@@ -1,0 +1,97 @@
+#ns-funfact-video {
+  padding: 100px 0;
+  width: 100%;
+  background-color: $neuro-color;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -487px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../image/funfactimg/section_shape.png");
+    background-repeat: no-repeat;
+  }
+  .ns-countup-funfact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 888;
+    p {
+      font-family: $fontfamily;
+      font-size: 18px;
+      font-weight: 600;
+      color: $text-color;
+      margin-top: 10px;
+    }
+    .ns-funfact {
+      width: 48%;
+      padding: 25px;
+      background: $color-white;
+      border: 1px solid $border-color;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .ns-countup {
+      margin-top: 10px;
+      .ns-count {
+        font-family: $fontfamily;
+        font-size: 28px;
+        font-weight: 700;
+        color: $color-black;
+      }
+    }
+  }
+  .ns-videos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .ns-video-box {
+      width: 85%;
+      height: 100%;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      z-index: 888;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-top: 30px;
+      }
+      @include media-breakpoint-up(md) {
+        width: 85%;
+        justify-content: center;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 777;
+        @include media-breakpoint-down(lg) {
+          display: none;
+        }
+      }
+
+      .ns-video-player {
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .ns-video-icons {
+          font-size: 70px;
+          color: $color-white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

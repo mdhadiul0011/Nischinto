@@ -1,0 +1,209 @@
+#ns-hero-part {
+  background-image: url("/assets/image/bannerImg/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  padding: 100px 0 0 0;
+  margin-bottom: none !important;
+  overflow: hidden;
+  position: relative;
+  .ns-hero-shape {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: 666;
+    @include media-breakpoint-down(xl) {
+      bottom: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      bottom: 0;
+    }
+    @include media-breakpoint-up(xxl) {
+      bottom: -1px;
+    }
+    .ns-hero-shape-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .ns-hero-left-content {
+    position: relative;
+    z-index: 777;
+    .ns-hero-content-title {
+      .title {
+        font-family: $fontfamily;
+        font-size: 60px;
+        font-weight: 700;
+        color: $color-black;
+        line-height: 100px;
+        @include media-breakpoint-down(sm) {
+          font-size: 50px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 50px;
+        }
+        @include media-breakpoint-down(lg) {
+          font-size: 50px;
+        }
+        @include media-breakpoint-down(xl) {
+          font-size: 50px;
+          line-height: 80px;
+        }
+      }
+      .animate_text {
+        display: block;
+        margin-left: 405px;
+        height: 120px;
+        margin-top: -100px;
+        overflow: hidden;
+        font-family: $fontfamily;
+        font-size: 60px;
+        font-weight: 700;
+        color: $color-black;
+        @include media-breakpoint-down(sm) {
+          margin-top: 0;
+          margin-left: 0px;
+          font-size: 50px;
+          height: 100px;
+        }
+        @include media-breakpoint-up(sm) {
+          margin-top: 0;
+          margin-left: 0px;
+          font-size: 50px;
+          height: 100px;
+        }
+        @include media-breakpoint-up(md) {
+          margin-left: 350px;
+          font-size: 50px;
+          height: 100px;
+          margin-top: -90px;
+        }
+        @include media-breakpoint-up(lg) {
+          margin-top: 0;
+          margin-left: 0px;
+          font-size: 50px;
+          height: 100px;
+        }
+        @include media-breakpoint-up(xl) {
+          margin-top: 0;
+          margin-left: 0px;
+          font-size: 50px;
+          height: 100px;
+        }
+        @include media-breakpoint-up(xxl) {
+          margin-left: 415px;
+          margin-top: -100px;
+          font-size: 50px;
+          height: 100px;
+        }
+        span {
+          display: block;
+          animation: wordslide 7s infinite;
+          padding: 13px 0;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 90px;
+            background-image: url("/assets/image/bannerImg/hero-shape.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1;
+            @include media-breakpoint-down(sm) {
+              left: -120px;
+            }
+            @include media-breakpoint-up(sm) {
+              left: -120px;
+            }
+
+            @include media-breakpoint-up(md) {
+              left: -30px;
+            }
+            @include media-breakpoint-up(lg) {
+              left: -120px;
+            }
+            @include media-breakpoint-up(xl) {
+              left: -160px;
+            }
+            @include media-breakpoint-up(xxl) {
+              width: 90%;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ns-hero-left-content {
+    p {
+      font-family: $fontfamily;
+      font-size: 18px;
+      font-weight: 400;
+      color: $text-color;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+    .appointment-btn {
+      padding: 12px 32px;
+      background: $secondary-bg;
+      color: $color-white;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      font-family: $fontfamily;
+      border: none;
+    }
+  }
+  .ns-hero-icons {
+    margin-top: 60px;
+    .ns-h-icons {
+      font-size: 30px;
+      color: $primary-color;
+      margin-right: 10px;
+    }
+  }
+  .ns-hero-right-img {
+    .slick-list {
+      position: relative;
+      display: block;
+      overflow: visible !important;
+      margin-top: -150px !important;
+      padding: 0;
+      width: 100% !important;
+      z-index: 222;
+      margin-left: 160px;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-left: -100px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-left: -60px;
+      }
+      @include media-breakpoint-up(xxl) {
+        margin-left: 160px;
+      }
+      @include media-breakpoint-up(xxxl) {
+        margin-left: 140px;
+      }
+    }
+    .slick-slider {
+        .slick-prev {
+            display: none !important;
+            opacity: 0 !important;
+        }
+
+        .slick-next {
+            display: none !important;
+            opacity: 0 !important;
+        }
+    }
+  }
+}

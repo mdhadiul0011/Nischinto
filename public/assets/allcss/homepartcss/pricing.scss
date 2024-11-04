@@ -1,0 +1,129 @@
+#ns-pricing-part {
+  padding: 100px 0;
+  width: 100%;
+  .ns-pricing-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 60px;
+    .ns-pricing-item {
+      width: 32%;
+      position: relative;
+      text-align: center;
+      padding-bottom: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      transition: all 0.4s ease;
+      @include media-breakpoint-down(md) {
+        width: 70%;
+        margin: 30px auto;
+      }
+      @include media-breakpoint-up(md) {
+        width: 60%;
+        margin: 30px auto;
+      }
+      @include media-breakpoint-up(lg) {
+        width: 40%;
+        margin: 30px auto;
+      }
+      @include media-breakpoint-up(xl) {
+        width: 32%;
+      }
+      &:hover {
+        border-bottom-right-radius: 90px;
+        .ns-pricing-text-elements {
+          .ns-pricing-btn {
+            button {
+              background: $secondary-bg;
+              color: $color-white;
+            }
+          }
+        }
+        .ns-pricing-hover {
+          width: 100%;
+          height: 40%;
+          position: absolute;
+          bottom: -196px;
+          right: -252px;
+          background: $primary-color;
+          border-radius: 30px;
+          border: 10px solid rgba(12, 184, 181, 0.651);
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          transform: rotate(78deg);
+          transition: all 0.4s ease;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("../../image/svg/price-shape.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 37%;
+        z-index: -999;
+      }
+      .ns-pricing-text-elements {
+        h3 {
+          font-family: $fontfamily;
+          color: $color-white;
+          font-size: 48px;
+          font-weight: 700;
+          margin-top: 20px;
+        }
+        h4 {
+          font-family: $fontfamily;
+          color: $color-black;
+          font-size: 22px;
+          font-weight: 700;
+          margin-top: 80px;
+        }
+        ul {
+          margin: 20px 0;
+          li {
+            font-family: $fontfamily;
+            color: $color-black;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            .ns-pricing-cross {
+              font-size: 18px;
+              font-weight: 700;
+              color: $red-color;
+              margin-right: 5px;
+            }
+            .ns-pricing-check {
+              font-size: 18px;
+              font-weight: 700;
+              color: $primary-color;
+              margin-right: 5px;
+            }
+          }
+        }
+        .ns-pricing-btn {
+          margin-top: 40px;
+          button {
+            padding: 14px 28px;
+            border: 1px solid $primary-color;
+            border-radius: 8px;
+            text-align: center;
+            font-family: $fontfamily;
+            font-size: 16px;
+            color: $primary-color;
+            font-weight: 700;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+  }
+}

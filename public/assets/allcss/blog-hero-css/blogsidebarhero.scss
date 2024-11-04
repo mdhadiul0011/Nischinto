@@ -1,0 +1,40 @@
+.ns-blog-sidebar-hero {
+    width: 100%;
+    padding: 150px;
+    background-image: url("../../image/bannerImg/blog-hero1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    z-index: 111;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.534);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .ns-sidebar-hero-text {
+        position: relative;
+        z-index: 222;
+        h2{
+            text-transform: capitalize;
+            font-family: $fontfamily;
+            color: $color-white;
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        p{
+            text-transform: capitalize;
+            font-family: $fontfamily;
+            color: $border-color;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+    }
+}

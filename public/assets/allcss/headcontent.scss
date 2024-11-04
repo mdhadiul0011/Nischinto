@@ -1,0 +1,81 @@
+.ns-head-content {
+    width: 100%;
+    .ns-hd-content{
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        @include media-breakpoint-down(sm){
+            width: 100%;
+        }
+        @include media-breakpoint-down(md){
+            width: 80%;
+        }
+        @include media-breakpoint-down(lg){
+            width: 80%;
+        }
+        @include media-breakpoint-down(xl){
+            width: 80%;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 2px;
+            background-color: $secondary-bg;
+            // @include media-breakpoint-down(sm){
+            //     top: 40%;
+            // }
+            // @include media-breakpoint-down(md){
+            //     top: 36%;
+            // }
+            @include media-breakpoint-down(lg){
+                top: 47%;
+            }
+        }
+        .ns-hd-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            background: $bg-white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 888;
+            // @include media-breakpoint-down(sm){
+            //     top: 40%;
+            // }
+            // @include media-breakpoint-down(md){
+            //     top: 36%;
+            // }
+            @include media-breakpoint-down(lg){
+                top: 47%;
+            }
+            .ns-head-img {
+                animation: headImgRotate 4s infinite  ;
+            }
+        }
+        h3 {
+            font-family: $fontfamily;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 60px;
+            color: $color-black;
+        }
+        p {
+            font-family: $fontfamily;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 60px;
+            color: $text-color;
+        }
+    }
+}

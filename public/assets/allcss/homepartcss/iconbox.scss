@@ -1,0 +1,55 @@
+#ns-icon-box {
+    padding: 70px 0;
+    text-align: center;
+    background: $bg-white;
+    .ns-cards {
+        width: 93% !important;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 0 auto;
+        border-radius: 15px;
+        background: #fff;
+        padding: 20px 10px;
+        cursor: pointer;
+        transition: all .4s ease;
+        @include media-breakpoint-down(sm){
+            margin-top: 30px;
+        }
+        @include media-breakpoint-down(md){
+            margin-top: 30px;
+        }
+        &:hover {
+            margin-top: -6px;
+            @include media-breakpoint-down(sm){
+                margin-top: 20px;
+            }
+            @include media-breakpoint-down(md){
+                margin-top: 20px;
+            }
+        }
+        .ns-icon-card-img{
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            .ns-icon-img{
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+    .ns-card-content{
+        h3  {
+            font-family: $fontfamily;
+            font-size: 20px;
+            font-weight: 600;
+            color: $color-black;
+            margin-bottom: 20px;
+        }
+        p{
+            font-family: $fontfamily;
+            font-size: 18px;
+            font-weight: 400;
+            color: $text-color;
+        }
+    } 
+}

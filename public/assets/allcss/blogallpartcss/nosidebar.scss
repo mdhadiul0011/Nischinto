@@ -1,0 +1,84 @@
+.pagi-blog{
+    .ns-paginations {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+        .ns-pagination-items {
+            width: 32%;
+            border: 1px solid $border-color;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+              }
+              @include media-breakpoint-up(md) {
+                width: 48%;
+              }
+              @include media-breakpoint-up(xl) {
+                width: 32%;
+              }
+            &:hover {
+                .ns-pagi-imgs {
+                    .ns-blog-imgs {
+                        transform: scale(1.1);
+                    }
+                }
+                .ns-blog-pagi-texts {
+                    h3{
+                        color: $primary-color;
+                    }
+                }
+            }
+            .ns-pagi-imgs {
+                width: 100%;
+                height: 260px;
+                overflow: hidden;
+                .ns-blog-imgs {
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(1);
+                    transition: all .5s ease;
+                }
+            }
+            .ns-blog-pagi-texts {
+                padding: 20px;
+                h3{
+                    font-family: $fontfamily;
+                    color: $color-black;
+                    font-size: 22px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: all .5s ease;
+                    margin-bottom: 10px;
+                }
+                span{
+                    margin-right: 10px;
+                    font-family: $fontfamily;
+                    color: $border-color;
+                    font-size: 14px;
+                }
+                p{
+                    font-family: $fontfamily;
+                    color: $text-color;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-top: 10px;
+                }
+                button{
+                    padding: 12px 28px;
+                    font-family: $fontfamily;
+                    color: $color-white;
+                    background: $secondary-bg;
+                    font-size: 18px;
+                    border: none;
+                    outline: none;
+                    border-radius: 8px;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+    
+}

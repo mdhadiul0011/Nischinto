@@ -1,0 +1,89 @@
+#ns-footer-part {
+    padding: 100px 0 150px 0;
+    background-image: url('../../image/footerImg/footer-bg\ -\ Copy.png');
+    width: 100%;
+    position: relative;
+    z-index: 777;
+    .ns-footer-left-elements{
+        p {
+            font-family: $fontfamily;
+            font-size: 18px;
+            font-weight: 400;
+            color: $text-color;
+            padding-right: 30px;
+            margin-top: 30px;
+        }
+        .ns-footer-icon {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .ns-f-icons {
+                color: $primary-color;
+                font-size: 24px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .ns-footer-links {
+        @include media-breakpoint-down(sm){
+            margin-top: 40px;
+        }
+        h3{
+            font-family: $fontfamily;
+            font-size: 19px;
+            font-weight: 700;
+            color: $primary-color;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 15px;
+            width: 70%;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding: none !important;
+            li {
+                padding-bottom: 15px;
+                a {
+                    font-family: $fontfamily;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $text-color;
+                    transition: all .4s ease;
+                }
+                &:hover > a {
+                    padding-left: 5px;
+                    color: $primary-color;
+                }
+            }
+        }
+        p {
+            font-family: $fontfamily;
+            font-size: 18px;
+            font-weight: 400;
+            color: $text-color;
+            padding-bottom: 15px;
+        }
+    }
+    .ns-copyright {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(221, 221, 221, 0.637);
+        padding: 18px 0;
+        p{
+            font-family: $fontfamily;
+            font-size: 14px;
+            font-weight: 400;
+            color: $text-color;
+            margin-top: 10px;
+        }
+        .ns-copyright-icon {
+            display: flex;
+            justify-content: flex-end;
+            .copyright-icons {
+                font-size: 40px;
+                color: $primary-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

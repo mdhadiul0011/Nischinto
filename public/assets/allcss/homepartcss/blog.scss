@@ -1,0 +1,101 @@
+#ns-blog-part {
+  padding: 100px 0;
+  width: 100%;
+  .ns-blog-box {
+    width: 100%;
+    margin-top: 60px;
+    .ns-blog-item {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      overflow: hidden;
+      border-radius: 12px;
+      padding-bottom: 20px;
+      @include media-breakpoint-down(md) {
+        width: 75%;
+        margin-top: 30px;
+        margin: 0 auto;
+      }
+      &:hover {
+        .ns-blog-img {
+          .blog-img {
+            transform: scale(1.1);
+          }
+        }
+        .ns-blog-text {
+          h3 {
+            color: $primary-color;
+          }
+        }
+      }
+      .ns-blog-img {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        .blog-img {
+          width: 100%;
+          transform: scale(1);
+          transition: all 0.4s ease;
+        }
+      }
+      .ns-blog-text {
+        padding: 15px;
+        h3 {
+          font-family: $fontfamily;
+          color: $color-black;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          transition: all 0.4s ease;
+        }
+        span {
+          font-family: $fontfamily;
+          color: $icons-color;
+          font-size: 14px;
+          font-weight: 400;
+        }
+        p {
+          font-family: $fontfamily;
+          color: $text-color;
+          font-size: 16px;
+          font-weight: 400;
+          margin-top: 10px;
+        }
+        .ns-blog-button {
+          margin-top: 20px;
+          border: 1px solid $secondary-bg;
+          color: $primary-color;
+          padding: 8px 18px;
+          font-family: $fontfamily;
+          font-size: 18px;
+          font-weight: 500;
+          outline: noen;
+          background: transparent;
+          border-radius: 12px;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          z-index: 888;
+          transition: all 0.5s ease;
+          &:hover {
+            color: $color-white;
+            &::after {
+              top: -24px;
+              left: -32px;
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 65px;
+            left: -32px;
+            background: $secondary-bg;
+            width: 200px;
+            height: 100px;
+            z-index: -888;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+  }
+}

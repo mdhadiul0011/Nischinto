@@ -1,0 +1,63 @@
+#ns-client {
+    width: 100%;
+    background: $neuro-color;
+    padding: 100px 0;
+    .ns-client-box{
+        .ns-client-item {
+            width: 97%;
+            height: 130px;
+            border-radius: 12px;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            background: $puls-color;
+        }
+        .ns-client-item2 {    
+            width: 97%;
+            height: 130px;
+            border-radius: 12px;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            background: $cruthes-color;
+        }
+        .ns-client-item3 {
+            width: 97%;
+            height: 130px;
+            border-radius: 12px;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            background: $xray-color;
+        }
+        .ns-client-item4 {
+            width: 97%;
+            height: 130px;
+            border-radius: 12px;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            background: $dental-color;
+        }
+        .ns-client-item5 {
+            width: 97%;
+            height: 130px;
+            border-radius: 12px;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            background: $curdiology-color;
+        }
+    }
+    .slick-slider {
+        .slick-prev {
+            display: none !important;
+            opacity: 0 !important;
+        }
+
+        .slick-next {
+            display: none !important;
+            opacity: 0 !important;
+        }
+    }
+}

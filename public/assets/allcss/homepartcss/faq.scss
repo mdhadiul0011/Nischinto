@@ -1,0 +1,30 @@
+#ns-faq-part {
+  padding: 100px 0;
+  background: $neuro-color;
+  width: 100%;
+  .ns-faq-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .accordion {
+    --bs-accordion-bg: $secondary-color !important;
+    --bs-accordion-btn-color: $color-white !important;
+    --bs-accordion-active-color: $color-white !important;
+    --bs-accordion-active-bg: $secondary-color !important;
+    @include media-breakpoint-down(xl) {
+      margin-top: 30px;
+      display: block;
+    }
+    .accordion-item {
+      color: $color-white;
+      background-color: $secondary-bg;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      font-family: $fontfamily;
+    }
+    .accordion-button:focus {
+      box-shadow: none !important;
+    }
+  }
+}
